@@ -4,7 +4,7 @@ const basename = path.basename(__filename)
 
 const express = require("express")
 const Router = express.Router()
-const Request = require(path.resolve('./requests/App/index.js'))
+const Request = require(path.resolve('./requests/index.js'))
 const Controller = require(path.resolve('./controllers/App/index.js'))
 const Middleware = require(path.resolve('./middleware/index.js'))
 const objMulter = require('multer')

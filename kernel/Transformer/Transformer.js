@@ -1,5 +1,5 @@
 const path = require('path')
-const db = require(path.resolve('./models/Rental/index.js'));
+const db = require(path.resolve('./models/index.js'));
 
 class Transformer {
 

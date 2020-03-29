@@ -2,7 +2,7 @@ const path = require('path')
 const _ = require('lodash')
 const AppConfig = require(path.resolve('./configs/app.js'))
 const Jwt = require(path.resolve('./kernel/Auth/Jwt.js'))
-const db = require(path.resolve('./models/Rental/index.js'));
+const db = require(path.resolve('./models/index.js'));
 let secretKey = AppConfig.JWT_SECRET
 
 class JwtAdmin extends Jwt {

@@ -34,7 +34,7 @@ app.use((req, res) => {
 })
 
 /**************** SCHEDUCE ****************/
-app.use('/api', require(path.resolve('./routes/index.js')))
+require(path.resolve('./console/Schedule/index.js'))
 
 let server = http.createServer(app)
 

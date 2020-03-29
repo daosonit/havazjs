@@ -1,6 +1,6 @@
 const path = require('path')
 const _ = require('lodash')
-const db = require(path.resolve('./models/Rental/index.js'));
+const db = require(path.resolve('./models/index.js'));
 const helpers = require(path.resolve('./kernel/Helper/index.js'))
 
 class MemberService {

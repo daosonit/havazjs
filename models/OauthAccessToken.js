@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
             accessToken: DataTypes.TEXT,
             browser: DataTypes.STRING,
             deviceName: DataTypes.STRING,
-            source: DataTypes.STRING,
+
             ipRequest: DataTypes.UUID,
             createdAt: DataTypes.DATE,
             expiredAt: DataTypes.DATE

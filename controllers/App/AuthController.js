@@ -1,6 +1,6 @@
 const path = require('path')
 const _ = require('lodash')
-let { AccountService } = require(path.resolve('./services/index.js'))
+let { MemberService } = require(path.resolve('./services/App/index.js'))
 const BaseController = require(path.resolve('./controllers/BaseController.js'))
 const bcrypt = require(path.resolve('./kernel/Helper/bcrypt.js'))
 const JwtSystem = require(path.resolve('./kernel/Auth/JwtSystem.js'))
@@ -20,7 +20,7 @@ class AuthController extends BaseController {
                 status: this.db.CustomerAccount.STATUS_ACTIVE
             }
 
-            let objAccount = await AccountService.findOneCustomerAccount({ where: objWhere })
+            let objAccount = await MemberService.findOneCustomerAccount({ where: objWhere })
             if (!(objAccount instanceof this.db.CustomerAccount)) throw new NotFoundException('Tài khoản không tồn tại.')
 
             if (objAccount && await bcrypt.compareAgency(objAccount, objBody.password)) {
@@ -42,7 +42,7 @@ class AuthController extends BaseController {
         try {
             let { objBody, objParams, objAuth, objQuery } = await this.request(req)
             let accessToken = req.accessToken
-            let result = await AccountService.removeAccessToken({ where: { accessToken: accessToken } })
+            let result = await MemberService.removeAccessToken({ where: { accessToken: accessToken } })
             return this.success(req, res, { data: result })
         } catch (error) {
             console.error(error)
@@ -60,7 +60,7 @@ class AuthController extends BaseController {
                 status: this.db.CustomerAccount.STATUS_ACTIVE
             }
 
-            let objAccount = await AccountService.findOneCustomerAccount({ where: objWhere })
+            let objAccount = await MemberService.findOneCustomerAccount({ where: objWhere })
             if (!(objAccount instanceof this.db.CustomerAccount)) throw new NotFoundException('Tài khoản không tồn tại.')
 
             let data = await this.item(objAccount, new AuthTransformer())
@@ -82,7 +82,7 @@ class AuthController extends BaseController {
                 status: this.db.CustomerAccount.STATUS_ACTIVE
             }
 
-            let objAccount = await AccountService.findOneCustomerAccount({ where: objWhere })
+            let objAccount = await MemberService.findOneCustomerAccount({ where: objWhere })
             if (!(objAccount instanceof this.db.CustomerAccount)) throw new NotFoundException('Tài khoản không tồn tại.')
 
             let inputs = {
@@ -116,7 +116,7 @@ class AuthController extends BaseController {
                 status: this.db.CustomerAccount.STATUS_ACTIVE
             }
 
-            let objAccount = await AccountService.findOneCustomerAccount({ where: objWhere })
+            let objAccount = await MemberService.findOneCustomerAccount({ where: objWhere })
             if (!(objAccount instanceof this.db.CustomerAccount)) throw new NotFoundException('Tài khoản không tồn tại.')
 
             let passwordOld = objBody.passwordOld

@@ -2,10 +2,10 @@ const path = require('path')
 const jwt = require('jsonwebtoken');
 const _ = require('lodash')
 const AppConfig = require(path.resolve('./configs/app.js'))
-const {
+let {
     OauthAccessTokenService,
-    AccountService
-} = require(path.resolve('./services/index.js'))
+    MemberService
+} = require(path.resolve('./services/App/index.js'))
 let secretKey = AppConfig.JWT_SECRET
 
 class Jwt {
