@@ -1,0 +1,14 @@
+
+.dockerignore
+npm-debug.log
+.git
+.gitignore
+.hg
+.svn
+*.log
+.idea
+
+node_modules
+docker
+deploy
+README.md
