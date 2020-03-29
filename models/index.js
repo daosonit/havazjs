@@ -5,7 +5,7 @@ const path = require('path');
 const chalk = require('chalk');
 const basename = path.basename(__filename);
 const Sequelize = require('sequelize');
-const config = require(path.resolve('./configs/connections.js')).POSTGRES
+const config = require(path.resolve('./configs/connections.js')).MYSQL
 const ActivityLog = require(path.resolve('./kernel/ActivityLog/index.js'))
 const db = new Object()
 
