@@ -33,7 +33,7 @@
     "glob": "^7.1.2",
     "jimp": "^0.9.6",
     "jsonwebtoken": "^8.2.2",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "minio": "^7.0.8",
     "moment": "^2.24.0",
     "moment-lunar": "0.0.4",
