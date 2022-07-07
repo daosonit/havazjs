@@ -35,7 +35,7 @@
     "jsonwebtoken": "^8.2.2",
     "lodash": "^4.17.14",
     "minio": "^7.0.8",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-lunar": "0.0.4",
     "moment-timezone": "^0.5.26",
     "mongoose": "^5.6.4",
