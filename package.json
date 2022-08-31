@@ -37,7 +37,7 @@
     "minio": "^7.0.8",
     "moment": "^2.24.0",
     "moment-lunar": "0.0.4",
-    "moment-timezone": "^0.5.26",
+    "moment-timezone": "^0.5.35",
     "mongoose": "^5.6.4",
     "multer": "^1.4.2",
     "mysql2": "^2.1.0",
