@@ -25,7 +25,7 @@
     "cors": "^2.8.4",
     "dotenv": "^8.0.0",
     "elasticsearch": "^16.5.0",
-    "excel4node": "^1.7.2",
+    "excel4node": "^1.8.0",
     "express": "~4.16.3",
     "express-rate-limit": "^5.0.0",
     "express-session": "^1.17.0",
