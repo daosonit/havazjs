@@ -32,7 +32,7 @@
     "express-validator": "^6.1.0",
     "glob": "^7.1.2",
     "jimp": "^0.9.6",
-    "jsonwebtoken": "^8.2.2",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.14",
     "minio": "^7.0.8",
     "moment": "^2.24.0",
